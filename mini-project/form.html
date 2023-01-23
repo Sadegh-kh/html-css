@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form</title>
+</head>
+<body>
+
+<form dir="rtl" style="font-size: 13px">
+  <fieldset>
+    <legend align="center">
+      فرم استعلام قیمت طراحی سایت
+    </legend>
+    <p style="color: red">نکته ۱ : خدمات مندرج در این فرم میتواند از سوی مشتری خصوصی سازی شود. </p>
+    <p style="color: red">نکته ۲ : فیلد‌هایی که دارای علامت * هستند ، باید توسط شما تکمیل شوند.</p>
+    <br>
+    <form name="info">
+      <label for="firstname">* نام : </label><input type="text" name="firstname" id="firstname"
+                                                  placeholder=" نام خود را وارد کنید . . . " required>
+      <br><br>
+      <label for="lastname">* نام خانوادگی : </label><input type="text" name="lastname" id="lastname"
+                                                            placeholder=" نام خانوادگی وارد کنید . . .  " required>
+      <br><br>
+      <label for="email">* ایمیل : </label><input type="email" name="email" id="email" placeholder="example@email.com"
+                                                  size="25"
+                                                  required>
+      <br><br>
+      <label for="phone">* شماره همراه : </label><input type="tel" name="phone" id="phone"
+                                                        placeholder="9158344807"
+                                                        required>
+      <br><br>
+      <label for="telno"> شماره منزل/محل‌ کار : </label><input type="tel" name="Tel-no" id="telno"
+                                                        placeholder="02153486512">
+      <br><br>
+      <label for="theme">رنگ مورد نظرتون برای تم : </label><input type="color" name="color-theme" id="theme">
+      <br><br>
+      <label>بودجه شما برای طراحی این سایت :</label>
+      <blockquote>
+        <label for="1to5">۱ تا ۵ میلیون تومان </label><input type="radio" name="payment" id="1to5"><br>
+        <label for="5to10">۵ تا ۱۰ میلیون تومان </label><input type="radio" name="payment" id="5to10"><br>
+        <label for="up10">۱۰ میلیون به بالا </label><input type="radio" name="payment" id="up10" checked><br>
+      </blockquote>
+      <br>
+      <label for="type-site">* نوع وب سایت شما : </label>
+      <select name="site-type" id="type-site" required>
+        <option value="خدماتی">خدماتی</option>
+        <option value="فرشگاهی">فروشگاهی</option>
+        <option value="شخصی">شخصی</option>
+        <option value="more">سایر  . . .</option>
+      </select>
+      <br><br>
+      <label>زمان تحویل پروژه : </label>
+      <span> ۲۰ روز </span>
+      <input type="range" min="20" max="60" >
+      <span> ۶۰ روز </span>
+      <br><br>
+      <textarea id="description" name="description" style="width: 200px;height: 100px" placeholder="توضیحات . . . "></textarea>
+    </form>
+  </fieldset>
+</form>
+
+</body>
+</html>
