@@ -1,25 +1,164 @@
-p{
-  color: darkblue;
-  font-size: 40px;
-}
-li.subitem{
+
+li.subitem {
   color: darkred;
   font-size: 20px;
 }
-a{
+
+a {
   text-decoration: none;
 }
+
 /*input[type=text],input[type=email]{*/
 /*  background-color: darkblue;*/
 /*}*/
-table,tr,td{
-border: black 1px solid;
-  border-collapse: collapse;
-  direction: rtl;
+
+.p1 {
+  text-shadow: 3px 3px 10px black;
+  font-family: "sans-serif";
 }
-td:hover{
+
+table {
+  width: 100%;
+}
+
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+td, th {
+  text-align: center;
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #cccc;
+}
+
+p {
+  font-size: 30px;
+}
+
+div.fixed {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+img {
+  position: absolute;
+  margin: auto auto;
+}
+
+body {
+  position: relative;
+}
+
+div p {
+  color: blue;
+}
+
+div > p {
+  color: red;
+}
+
+div ~ p {
+  color: darkgoldenrod;
+}
+
+div + p {
+  color: purple;
+}
+
+p[title] {
+  color: chartreuse;
+}
+
+p[title="name"] {
+  color: aquamarine;
+}
+
+h3:active {
+  background-color: darkred;
+  color: white;
+}
+
+.hover {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  transition: 0.3s;
+}
+
+.hover:hover {
   background-color: blue;
 }
-td{
-  padding: 10px;
+
+p {
+  color: red !important;
+}
+
+#sic {
+  color: black !important;
+}
+
+p {
+  color: blue;
+}
+
+.hover {
+  animation: cube 5s infinite alternate;
+  position: relative;
+}
+
+@keyframes cube {
+  0% {
+    left: 0px;
+    top: 0px
+  }
+  25% {
+    left: 300px;
+    top: 0px
+  }
+  50% {
+    left: 300px;
+    top: 200px
+  }
+  75% {
+    left: 0px;
+    top: 200px
+  }
+  100% {
+    left: 0px;
+    top: 0px
+  }
+
+}
+
+div.parallelogram {
+  width: 400px;
+  height: 200px;
+  background-color: blue;
+  transform: skew(-20deg, 0deg);
+  margin-left: 100px;
+}
+
+/*loading*/
+div.loading {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  padding: 0;
+  border-radius: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  border-top-color: rgba(0, 0, 0, 0.60);
+  border-left-color: rgba(0, 0, 0, 0.60);
+  animation: loading 1s linear infinite;
+}
+@keyframes loading {
+  from {transform: rotate(0deg)}
+  to{transform: rotate(360deg)}
 }

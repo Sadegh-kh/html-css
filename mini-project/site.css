@@ -1,0 +1,71 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  font-family: "Gentium Basic";
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background-color: white;
+}
+
+
+.topnav ul {
+  padding-left: 0px;
+  margin: 0px;
+  padding-top: 0px;
+  list-style-type: none;
+  background-color: black;
+  overflow: hidden;
+}
+
+.topnav a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding: 10px;
+  float: left;
+  transition: 0.2s;
+}
+
+.topnav a:hover {
+  color: black;
+  background-color: #ddd;
+}
+
+.leftCol{
+  float: left;
+  width: 75%;
+}
+.image{
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+.card{
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.rightCol{
+  width: 23%;
+  float: right;
+}
+.footer{
+  background-color: #aaaaaa;
+  text-align: center;
+  padding: 10px;
+  clear: both;
+}
+@media screen and(max-width: 1000px) {
+  .leftCol,.rightCol{
+    width: 100%;
+    padding: 0;
+  }
+}
+
